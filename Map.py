@@ -26,10 +26,10 @@ class Map(object):
         elif isinstance(value, bool):
             value = (None, value)
             
-        if isinstance(y, slice):
-            x = slice(x,x)
-        elif isinstance(x, slice):
-            y = slice(y,y)
+        if isinstance(x, int):
+            x = slice(x,x+1)
+        if isinstance(y, int):
+            y = slice(y,y+1)
             
         for i in range(y.start,y.stop,y.step if y.step != None else 1):
             for j in range(x.start,x.stop,x.step if x.step != None else 1):
