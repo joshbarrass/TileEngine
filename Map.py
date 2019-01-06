@@ -26,18 +26,14 @@ class Map(object):
         elif isinstance(value, bool):
             value = (None, value)
             
-        if isinstance(y, int) and isinstance(x, int):
-            self.set_tile(coord, *value)
-        elif isinstance(y, slice) and isinstance(x, int):
-            for i in range(y.start,y.stop,y.step if y.step != None else 1):
-                self.set_tile((x, i), *value)
-        elif isinstance(y, int) and isinstance(x, slice):
-            for i in range(x.start,x.stop,x.step if x.step != None else 1):
-                self.set_tile((i, y), *value)
-        elif isinstance(y, slice) and isinstance(x, slice):
-            for i in range(y.start,y.stop,y.step if y.step != None else 1):
-                for j in range(x.start,x.stop,x.step if x.step != None else 1):
-                    self.set_tile((j, i), *value)
+        if isinstance(y, slice):
+            x = slice(x,x)
+        elif isinstance(x, slice):
+            y = slice(y,y)
+            
+        for i in range(y.start,y.stop,y.step if y.step != None else 1):
+            for j in range(x.start,x.stop,x.step if x.step != None else 1):
+                self.set_tile((j, i), *value)
 
     @property
     def width(self):
