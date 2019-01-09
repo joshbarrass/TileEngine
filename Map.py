@@ -2,9 +2,9 @@
 
 ## MAP file reader/writer
 
-import sys, math
+import math
 
-PY_VER = sys.version_info.major
+from Constants import PY_VER
 
 class Map(object):
     def __init__(self, tiles, collisions, version=1):
