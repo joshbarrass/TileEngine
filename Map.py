@@ -60,6 +60,8 @@ class Map(object):
         self._iteration_position[0] += 1
         return to_return
 
+    next = __next__
+
     def set_tile(self, coord, tile=None, solid=None):
         """Sets a tile to a particular type
 
@@ -212,7 +214,10 @@ class MapFile(object):
         if PY_VER == 3:
             return int.from_bytes(data, "big")
         else:
-            return int(data, 2)
+            b = ""
+            for char in data:
+                b += bin(ord(char))[2:]
+            return int(b, 2)
 
     def _load_with_terminating_1(self, f):
         # read one byte and check last bit by checking evenness
