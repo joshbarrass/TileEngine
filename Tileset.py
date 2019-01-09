@@ -30,6 +30,9 @@ class Tileset(object):
 
         return im
 
+    def __len__(self):
+        return len(self.tiles)
+
 
 def openfile(fp,tilewidth,tileheight):
     im = Image.open(fp)
