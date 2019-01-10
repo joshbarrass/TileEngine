@@ -30,3 +30,8 @@ class MapTests(unittest.TestCase):
 
         self.assertEqual(pix[1000,1000], (0,255,33,255))
         self.assertEqual(pix[0,0], (255,255,255,255))
+
+    def test_coordinate(self):
+        ts = Tileset.openfile("test/testtiles.png", 20, 20)
+        self.assertEqual(ts.get_index_from_coord((0,0)), 0)
+        self.assertEqual(ts.get_index_from_coord((1,2)), 11)
