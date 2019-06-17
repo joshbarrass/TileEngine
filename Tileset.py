@@ -31,7 +31,7 @@ class Tileset(object):
         index += y*tiles_per_row
         index += x
 
-        return index
+        return int(index)
 
     def render_map_to_image(self,m):
         size = (self.tilewidth*m.width, self.tileheight*m.height)
