@@ -226,7 +226,7 @@ class MapFile(object):
             data = f.read(1)
             val = self._convert_read_to_int(data)
             total += val >> 1
-            if val % 2:
+            if val % 2: # if last bit is 1, do another loop
                 continue
             break
         return total
