@@ -13,4 +13,4 @@ del this_dir
 del os
 del sys
 
-VERSION = "1.0.0"
+VERSION = "1.0.1"
