@@ -6,7 +6,7 @@ install:
  - pip install -r requirements.txt
 script:
  - nosetests -v --with-coverage test/
- - CODECLIMATE_REPO_TOKEN=8026b7904e5240627b342b06c0aa12cd1d909bcc124a9b70afd1769ffbd8923e codeclimate-test-reporter
+ - CODECLIMATE_REPO_TOKEN=e2a851cb5dee114cfa19f5a4407724321ac240623c9a7c1e6b8cccb5b40fdfb0 codeclimate-test-reporter
 addons:
  code_climate:
-  repo_token: 8026b7904e5240627b342b06c0aa12cd1d909bcc124a9b70afd1769ffbd8923e
+  repo_token: e2a851cb5dee114cfa19f5a4407724321ac240623c9a7c1e6b8cccb5b40fdfb0
