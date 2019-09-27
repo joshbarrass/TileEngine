@@ -1,9 +1,9 @@
 # TileEngine #
 
-[![Build Status](https://api.travis-ci.com/WORD559/TileEngine.svg?branch=master)](https://travis-ci.com/WORD559/TileEngine)
-[![Code Climate](https://codeclimate.com/github/WORD559/TileEngine/badges/gpa.svg)](https://codeclimate.com/github/WORD559/TileEngine)
-[![Test Coverage](https://codeclimate.com/github/WORD559/TileEngine/badges/coverage.svg)](https://codeclimate.com/github/WORD559/TileEngine/coverage)
-[![Issue Count](https://codeclimate.com/github/WORD559/TileEngine/badges/issue_count.svg)](https://codeclimate.com/github/WORD559/TileEngine)
+[![Build Status](https://api.travis-ci.com/joshbarrass/TileEngine.svg?branch=master)](https://travis-ci.com/joshbarrass/TileEngine)
+[![Code Climate](https://codeclimate.com/github/joshbarrass/TileEngine/badges/gpa.svg)](https://codeclimate.com/github/joshbarrass/TileEngine)
+[![Test Coverage](https://codeclimate.com/github/joshbarrass/TileEngine/badges/coverage.svg)](https://codeclimate.com/github/joshbarrass/TileEngine/coverage)
+[![Issue Count](https://codeclimate.com/github/joshbarrass/TileEngine/badges/issue_count.svg)](https://codeclimate.com/github/joshbarrass/TileEngine)
 
 Writing my own tile-based game engine (Pokemon style)
 
